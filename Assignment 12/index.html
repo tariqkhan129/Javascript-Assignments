@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter a positive integer:"));
+
+        document.write("<h3>Number: " + num + "</h3>");
+        document.write("<h3>Round off value: " + Math.round(num) + "</h3>");
+        document.write("<h3>Floor value: " + Math.floor(num) + "</h3>");
+        document.write("<h3>Ceil value: " + Math.ceil(num) + "</h3>");
+        document.write("<hr>");
+
+        let num1 = parseFloat(prompt("Enter a negative floating point number:"));
+        document.write("<h3>Number: " + num + "</h3>");
+        document.write("<h3>Round off value: " + Math.round(num) + "</h3>");
+        document.write("<h3>Floor value: " + Math.floor(num) + "</h3>");
+        document.write("<h3>Ceil value: " + Math.ceil(num) + "</h3>");
+        document.write("<hr>")
+
+        let num3 = parseFloat(prompt("Enter a number:"));
+        let abs = Math.abs(num3);
+        document.write("<h3>The absolute value of " + num3 + " is " + abs + "</h3>");
+        document.write("<hr>")
+        let diceValue = Math.floor(Math.random() * 6) + 1;
+
+        document.write("The value of the dice is: " + diceValue);
+
+        document.write("<hr>")
+        // Generate a random number between 0 and 1
+        let coinToss = Math.floor(Math.random() * 2);
+
+        let result = "";
+        if (coinToss === 0) {
+            result = "Heads";
+        } else {
+            result = "Tails";
+        }
+
+        document.write("The coin landed on: " + result);
+
+        document.write("<hr>")
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        document.write("Random number between 1 and 100: " + randomNumber);
+
+        document.write("<hr>")
+        let weight = prompt("What is your weight in kilograms?");
+
+        weight = parseFloat(weight);
+
+        document.write("Your weight is: " + weight + " kilograms.");
+        document.write("<hr>")
+
+        const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+        const userNumber = parseInt(prompt("Guess a number between 1 and 10"));
+
+        if (userNumber === secretNumber) {
+            alert("Congratulations! You guessed the secret number.");
+        } else {
+            alert("Sorry, the secret number was " + secretNumber + ".");
+        }
+
+
+    </script>
+</body>
+</html>
